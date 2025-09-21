@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "RhythmFlow AI",
+    "subtitle": "Built with Zara",
+    "description": "RhythmFlow AI is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://c70ff2f40f8c4217bb791dbb28120d87-dhik.vercel.app",
+    "splashImageUrl": "https://c70ff2f40f8c4217bb791dbb28120d87-dhik.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://c70ff2f40f8c4217bb791dbb28120d87-dhik.vercel.app/image.png",
+    "tagline": "RhythmFlow AI",
+    "screenshotUrls": [
+      "https://c70ff2f40f8c4217bb791dbb28120d87-dhik.vercel.app/screenshot.png",
+      "https://c70ff2f40f8c4217bb791dbb28120d87-dhik.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://c70ff2f40f8c4217bb791dbb28120d87-dhik.vercel.app/api/webhook"
+  }
+}
