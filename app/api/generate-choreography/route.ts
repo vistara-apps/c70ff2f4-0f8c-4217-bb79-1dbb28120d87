@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
 
-const openai = new OpenAI({
+const openai = process.env.OPENROUTER_API_KEY ? new OpenAI({
   apiKey: process.env.OPENROUTER_API_KEY,
   baseURL: "https://openrouter.ai/api/v1",
   dangerouslyAllowBrowser: true,
-});
+}) : null;
 
 export async function POST(request: NextRequest) {
   try {
@@ -16,6 +16,14 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         { success: false, error: 'Missing required parameters' },
         { status: 400 }
+      );
+    }
+
+    // Check if OpenAI client is available
+    if (!openai) {
+      return NextResponse.json(
+        { success: false, error: 'AI service not configured' },
+        { status: 503 }
       );
     }
 
